@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+}
+
+
+
+.container{
+    .row{
+       
+        justify-content: center;
+        .info{
+            // &:nth-child(1){
+            //         .desc{
+            //             display: block;
+                        
+            //         }
+            //      }
+            // &:nth-child(2){
+            //     .desc{
+            //         display: none;
+                    
+            //     }
+            //  }
+            // &:nth-child(3){
+            //     .desc{
+            //         display: none;
+                    
+            //     }
+            //  }
+            
+            .title{
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                border: 1px rgb(138, 138, 138) solid;
+                .icon{
+                    
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    width: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .2s;
+                    transition-timing-function: ease-out;
+                    .fa-chevron-down{
+                        transition: .2s;
+                    transition-timing-function: ease-out;
+                        transform: scale(1.1);
+                        &:hover{
+                            &:hover{
+                        box-shadow: 0px 0px 10px 2px #000000;
+                    }
+                        }
+                        padding: 5px;
+                        border-radius: 50%;
+                    }
+                }
+                h4{
+                    margin: 0;
+                    font-size: 15px;
+                    line-height: 1.5;
+                }
+            }
+        
+            .desc{
+                display: none;
+
+                border: 1px rgb(138, 138, 138) solid;
+                
+                p{
+                    padding: 15px;
+                    margin: 0%;
+                    opacity: 60%;
+                }
+            }
+        }
+
+    }
+}
+
+.active{
+    color: #005aff!important;
+}
+
+.customAnimate{
+    transform: rotateZ(180deg);
+}
